@@ -106,7 +106,6 @@ public class wsmLogin {
 		if (driver.findElement(By.xpath("//a[@class='btn-forgot-password'][contains(.,'Forgot password')]"))
 				.isDisplayed())
 			actual = "TRUE";
-		System.out.println(actual);
 		Assert.assertEquals(actual, expected);
 	}
 
@@ -117,7 +116,7 @@ public class wsmLogin {
 
 		if (driver.findElement(By.id("user_remember_me")).isSelected())
 			actual = "TRUE";
-		System.out.println(actual);
+
 		Assert.assertEquals(actual, expected);
 	}
 
